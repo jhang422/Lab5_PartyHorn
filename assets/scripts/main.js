@@ -24,16 +24,20 @@ input.addEventListener('change', (event) =>
 {
     document.getElementById("volume-slider").value = event.target.value;
     if (event.target.value > 66) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-3.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-3.svg";
+        document.getElementById("honk-btn").disabled = false;
     }
     if ((event.target.value < 67) && (event.target.value > 33)) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-2.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-2.svg";
+        document.getElementById("honk-btn").disabled = false;
     }
     if ((event.target.value < 34) && (event.target.value > 0)) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-1.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-1.svg";
+        document.getElementById("honk-btn").disabled = false;
     }
     if (event.target.value == 0) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-0.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-0.svg";
+        document.getElementById("honk-btn").disabled = true;
     }
 });
 
@@ -42,16 +46,20 @@ slider.addEventListener('change', (event) =>
 {
     document.getElementById("volume-number").value = event.target.value;
     if (event.target.value > 66) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-3.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-3.svg";
+        document.getElementById("honk-btn").disabled = false;
     }
     if ((event.target.value < 67) && (event.target.value > 33)) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-2.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-2.svg";
+        document.getElementById("honk-btn").disabled = false;
     }
     if ((event.target.value < 34) && (event.target.value > 0)) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-1.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-1.svg";
+        document.getElementById("honk-btn").disabled = false;
     }
     if (event.target.value == 0) {
-        document.getElementById('volume-image').src="./assets/media/icons/volume-level-0.svg"
+        document.getElementById('volume-image').src="./assets/media/icons/volume-level-0.svg";
+        document.getElementById("honk-btn").disabled = true;
     }
 });
 
