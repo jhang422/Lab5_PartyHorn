@@ -60,4 +60,3 @@ document.getElementById("honk-btn").addEventListener("click", playAud);
 document.getElementById("radio-air-horn").addEventListener("click", changeAir);
 document.getElementById("radio-car-horn").addEventListener("click", changeCar);
 document.getElementById("radio-party-horn").addEventListener("click", changeParty);
-document.getElementById("radio-party-horn").addEventListener("click", changeParty);
